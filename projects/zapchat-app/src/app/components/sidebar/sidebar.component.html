@@ -1,0 +1,9 @@
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000">
+    <h3>Menu</h3>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/dashboard">Dashboard</a></li>
+      <li><a routerLink="/settings">Settings</a></li>
+    </ul>
+  </p-sidebar>
+  <button pButton type="button" (click)="visibleSidebar = true" icon="pi pi-bars"></button>
